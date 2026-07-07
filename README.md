@@ -46,13 +46,14 @@ pip install -r requirements.txt
 
 Paste a sample of your app's CLI or Streamlit output here so a reader can see what a generated plan looks like:
 
-```
-# e.g.:
-# Daily plan for Biscuit (Golden Retriever):
-#   08:00 — Morning walk (30 min) [priority: high]
-#   09:00 — Feeding (10 min) [priority: high]
-#   ...
-```
+ssbssjosh@Joshuas-MacBook-Air ai110-module2show-pawpal-starter % /usr/local/bin/python3 /Users/ssbssjosh/Downloads/ai110-module2sho
+w-pawpal-starter/main.py
+/Users/ssbssjosh/Downloads/ai110-module2show-pawpal-starter/pawpal_system.py
+Today's Schedule
+------------------------------
+Buddy: Feed Breakfast (10 min, Daily) [✗]
+Luna: Brush Fur (15 min, Weekly) [✗]
+Buddy: Morning Walk (30 min, Daily) [✗]
 
 ## 🧪 Testing PawPal+
 
@@ -74,19 +75,26 @@ Sample test output:
 
 > Fill in once you've implemented scheduling logic.
 
-| Feature | Method(s) | Notes |
-|---------|-----------|-------|
-| Task sorting | | e.g., by priority, duration |
-| Filtering | | e.g., skip tasks if time runs out |
-| Conflict handling | | e.g., overlapping time slots |
-| Recurring tasks | | e.g., daily vs. weekly |
+## Smarter Scheduling
+
+### Sorting
+Implemented in Scheduler.sort_by_time()
+
+### Filtering
+Implemented in Scheduler.filter_by_pet() and Scheduler.filter_completed()
+
+### Conflict Detection
+Implemented in Scheduler.detect_conflicts()
+
+### Recurring Tasks
+Implemented using Task frequency and Scheduler recurring task logic.
 
 ## 📸 Demo Walkthrough
 
 Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
+1. 
+2. 
 3. <!-- Describe this step -->
 4. <!-- Describe this step -->
 5. <!-- Add more steps as needed -->
