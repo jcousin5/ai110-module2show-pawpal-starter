@@ -56,21 +56,37 @@ Luna: Brush Fur (15 min, Weekly) [✗]
 Buddy: Morning Walk (30 min, Daily) [✗]
 
 ## 🧪 Testing PawPal+
+## Testing PawPal+
+
+Run the automated tests with:
 
 ```bash
-# Run the full test suite:
-pytest
-
-# Run with coverage:
-pytest --cov
+python3 -m pytest
 ```
 
-Sample test output:
+The test suite verifies:
 
-```
-# Paste your pytest output here
+- Adding tasks to pets
+- Sorting tasks by scheduled time
+- Daily recurring task creation
+- Conflict detection
+- Filtering tasks by pet
+
+Example successful test run:
+
+```text
+============================= test session starts =============================
+platform darwin -- Python 3.14.6
+collected 5 items
+
+tests/test_pawpal.py .....                            [100%]
+
+============================== 5 passed in 0.03s ==============================
 ```
 
+**Confidence Level:** ⭐⭐⭐⭐⭐ (5/5)
+
+The automated tests cover the core scheduling functionality, including sorting, filtering, recurring tasks, and conflict detection, providing confidence that the system behaves as expected.
 ## 📐 Smarter Scheduling
 
 > Fill in once you've implemented scheduling logic.
@@ -93,10 +109,32 @@ Implemented using Task frequency and Scheduler recurring task logic.
 
 Describe your app in numbered steps so a reader can follow along without watching a video:
 
-1. 
-2. 
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+### Main UI Features
+
+- Add pets
+- Create care tasks
+- Assign task times
+- Generate a daily schedule
+- View conflict warnings
+- Display scheduled tasks
+
+### Example Workflow
+
+1. Enter an owner name.
+2. Add a pet.
+3. Create several care tasks.
+4. Generate the daily schedule.
+5. Review tasks sorted by time.
+6. Resolve any conflict warnings displayed by the scheduler.
+
+## Features
+
+- Add multiple pets
+- Create daily and weekly care tasks
+- Automatically sort tasks by scheduled time
+- Filter tasks by pet and completion status
+- Detect scheduling conflicts
+- Automatically generate recurring daily and weekly tasks
+- Display today's schedule in chronological order
 
 **Screenshot or video** *(optional)*: <!-- Insert a screenshot or link to a demo video here -->
