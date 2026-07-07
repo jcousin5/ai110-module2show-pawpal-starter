@@ -5,12 +5,17 @@
 **a. Initial design**
 
 - Briefly describe your initial UML design.
+The UML design is feed dog, walk dog, give medicine, groom cat, play fetch. The Owner stores user information and preferences. Each Pet stores its own care tasks. The Task class represents activities such as feeding or walking, including duration and priority. Finally, the Scheduler generates a daily plan based on available time and task priority. Separating these responsibilities makes the application easier to maintain and extend.
 - What classes did you include, and what responsibilities did you assign to each?
+The classes that I included into the design are Owner, Pet, Task and Schedule. The responsiblities that I assigned to each is: for Owner name, available time, preference, pets; for Pet name, species, age, tasks; for Task title, duration, priority, completed; for Schedule tasks. 
 
 **b. Design changes**
 
 - Did your design change during implementation?
+Yes
 - If yes, describe at least one change and why you made it.
+One change that I made was Scheduler needs more context and so Scheduler now stores an Owner instead of only a task list
+
 
 ---
 
