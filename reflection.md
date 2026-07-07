@@ -33,6 +33,7 @@ Through identifying which would be most usefuk to improve user function with the
 - Describe one tradeoff your scheduler makes.
 One tradeoff the scheduler makes is that it prioritizes shorter tasks over other possible factors, such as urgency or personal preference. This is reasonable for this scenario because completing quick tasks first can help owners manage their time better, but a more advanced scheduler could add priority levels or deadlines in the future. My scheduler only checks for tasks that start at exactly the same time. It does not detect overlapping tasks with different start times. This keeps the algorithm simple while still identifying the most common scheduling conflicts.
 - Why is that tradeoff reasonable for this scenario?
+This approach keeps the scheduling algorithm simple, easy to understand, and efficient while still identifying the most common scheduling conflicts. For a basic pet care planner, checking for exact time conflicts provides useful feedback without adding unnecessary complexity. More advanced features, such as priority-based scheduling or overlap detection, could be added in a future version.
 
 ---
 
